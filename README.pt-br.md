@@ -6,7 +6,7 @@
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software Insider* is the software used to configure 
+*SusaPad Software Insider* é o software usado para configurar 
 o *SusaPad Insider Edition*/[*MiniPad*][minipad].
 
 > **Note**: *SusaPad Software* refere-se ao [SusaPad Software][software],
