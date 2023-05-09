@@ -13,7 +13,8 @@
 > but it's not the same as *SusaPad*, which is just a *keypad* (hardware).
 > *SusaPad Software Insider* refers to this project itself.
 
-> **Note**: It's not available to all SusaPad/MiniPad's version. 
+> **Note**: It's not available to all *SusaPad*/*MiniPad*'s version.
+>
 > Please read [Compatibility Section](#compatibility) to more information.
 
 [minipad]: https://github.com/minipadKB
@@ -116,7 +117,7 @@ For more details about their license, [read Qt's License][qt-license].
 
 Yes, it's compatible with the [old *minipad-firmware*'s
 version (*commit `f62f827`*)][minipad-commit],
-used by *SusaPad Insider*.
+used by *SusaPad Insider Edition*.
 
 
 ### Why my application is so slow?
@@ -146,7 +147,7 @@ but it has relationship with *SusaPad* itself.
 
 Also, worth mentioning that *SusaPad Software Insider* is a fork
 of *SusaPad Software* to work with the *Arduino* version of *SusaPad*,
-the *SusaPad Insider*.
+the *SusaPad Insider Edition*.
 So, it follows the same rules and licences given by *SusaPad Software*.
 
 
