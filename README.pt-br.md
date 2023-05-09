@@ -6,13 +6,13 @@
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software Insider* é o software usado para configurar 
+*SusaPad Software Insider* é o *software* usado para configurar 
 o *SusaPad Insider Edition*/[*MiniPad*][minipad].
 
-> **Note**: *SusaPad Software* refere-se ao [SusaPad Software][software],
-> mas não é o mesmo que o *SusaPad*, o qual é um *keypad* (hardware).
+> **Note**: *SusaPad Software* refere-se ao [*SusaPad Software*][software],
+> mas não é o mesmo que o *SusaPad*, o qual é um *keypad* (*hardware*).
 
-> **Note**: Este software não está disponível para 
+> **Note**: Este *software* não está disponível para 
 > todas as versões do *SusaPad*/*Minipad*.
 >
 > Por favor, leia a [Secção de Compatibilidade](#compatibilidade) 
@@ -43,12 +43,12 @@ utilize o [*SusaPad Software*][software].
 ### Propostas
 
 Você poderá adicionar propostas:
-bugs, dúvidas, perguntas, requisições de recursos,
-via Issues.
+*bugs*, dúvidas, perguntas, requisições de recursos,
+via *Issues*.
 
 Por favor, leia atentamente [nossa proposta fixada][issue-1]
 e tenha certeza de estar ciente das
-[Diretrizes da Comunidade do GitHub][gh-rules].
+[Diretrizes da Comunidade do *GitHub*][gh-rules].
 
 [issue-1]: https://github.com/susapad/software-insider/issues/1
 [gh-rules]: https://docs.github.com/pt/site-policy/github-terms/github-community-guidelines#maintaining-a-strong-community

@@ -6,11 +6,12 @@
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software Insider* es el software usado para configurar 
+*SusaPad Software Insider* es el *software* usado para configurar 
 el *SusaPad Insider Edition*/[*MiniPad*][minipad].
 
-> **Note**: *SusaPad Software* hace referencia al [SusaPad Software][software],
-> el no es el mismo que *SusaPad*, cuyo es un *keypad* (hardware).
+> **Note**: *SusaPad Software* 
+> hace referencia al [*SusaPad Software*][software],
+> el no es el mismo que *SusaPad*, cuyo es un *keypad* (*hardware*).
 
 > **Note**: Este no está disponible para 
 > todas las versiones del *SusaPad*/*MiniPad*
@@ -30,7 +31,7 @@ desde que este software fue diseñado solo para el *Insider Edition*,
 cuyo usa *Arduino* en vez de *Raspberry*
 y el [antigo firmware del *MiniPad*][old-firmware] en vez del más reciente.
 
-Si tu *SusaPad*/*MiniPad* se encuentra el la más nueva versión del firmware,
+Si tu *SusaPad*/*MiniPad* se encuentra el la más nueva versión del *firmware*,
 utilice el [*SusaPad Software*][software].
 
 [old-firmware]: https://github.com/minipadKB/minipad-firmware-old
@@ -42,12 +43,12 @@ utilice el [*SusaPad Software*][software].
 
 ### Issues
 
-Puedes añadir propuestas: bugs, dudas, preguntas,
-solicitud de nuevas funcionalidades via Issues.
+Puedes añadir propuestas: *bugs*, dudas, preguntas,
+solicitud de nuevas funcionalidades via *Issues*.
 
-Por favor, leas cuidadosamiente [nosa Issue fijada][issue-1]
+Por favor, leas cuidadosamiente [nosa *Issue* fijada][issue-1]
 y asegúrase de saber sobre las
-[Pautas de la Comunidad de GitHub][gh-rules].
+[Pautas de la Comunidad de *GitHub*][gh-rules].
 
 [issue-1]: https://github.com/susapad/software-insider/issues/1
 [gh-rules]: https://docs.github.com/es/site-policy/github-terms/github-community-guidelines#maintaining-a-strong-community
@@ -120,16 +121,16 @@ For more details about their license, [read Qt's License][qt-license].
 
 ## FAQ
 
-### ¿Es este software compatíble con el *Minipad*?
+### ¿Es este *software* compatíble con el *Minipad*?
 
-Si, esse software es compatible con la [versión legado del *minipad-firmware*
+Si, esse *software* es compatible con la [versión legado del *minipad-firmware*
 (*commit `f62f827`*)][minipad-commit], 
 que es la utilizada por el *SusaPad Insider Edition*.
 
 ### ¿Por qué mi aplicación es tan lenta?
 
 Esto no es la aplicación en si,
-mas la forma con que comunicamonos con el arduino.
+mas la forma con que comunicamonos con el *Arduino*.
 
 Infelismente, los comando somente pueden ser enviados con
 uno segundo de intervalo entre los mismos.
