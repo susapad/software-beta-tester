@@ -130,7 +130,7 @@ que es la utilizada por el *SusaPad Insider Edition*.
 ### ¿Por qué mi aplicación es tan lenta?
 
 Esto no es la aplicación en si,
-mas la forma con que comunicamonos con el *Arduino*.
+mas la forma con que comunicamonos vía puerta serial.
 
 Infelismente, los comando somente pueden ser enviados con
 uno segundo de intervalo entre los mismos.
