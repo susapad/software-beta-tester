@@ -1,19 +1,39 @@
 
 
-# SusaPad Software
+# SusaPad Software Insider
 
 > [[Português](./README.pt-br.md)] | [[Español](./README.es.md)]
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software* is the software used to configure *SusaPad*/[*MiniPad*][minipad].
+*SusaPad Software Insider* is the software used to configure 
+*SusaPad Insider Edition*/[*MiniPad*][minipad].
 
-> **Note**: *SusaPad Software* refers to this project itself,
+> **Note**: *SusaPad Software* refers to [SusaPad Software][software],
 > but it's not the same as *SusaPad*, which is just a *keypad* (hardware).
+> *SusaPad Software Insider* refers to this project itself.
+
+> **Note**: It's not available to all *SusaPad*/*MiniPad*'s version.
+>
+> Please read [Compatibility Section](#compatibility) to more information.
 
 [minipad]: https://github.com/minipadKB
+[software]: https://github.com/susapad/software
 
 ## User Guide
+
+### Compatibility
+
+It's not available to all *SusaPad*'s version 
+since it's for *Insider edition* only,
+which uses *Arduino* instead of *Raspberry* 
+and the [old MiniPad's firmware][old-firmware] instead of the latest.
+
+If your *SusaPad*/*MiniPad* is at the latest firmware's version,
+so use the [*SusaPad Software*][software].
+
+[old-firmware]: https://github.com/minipadKB/minipad-firmware-old
+[software]: https://github.com/susapad/software
 
 ### Installation
 
@@ -28,7 +48,7 @@ Please, carefully read [our pinned Issue][issue-1]
 and make sure that you know about
 [Github's Community Guideline][gh-rules].
 
-[issue-1]: https://github.com/susapad/software/issues/1
+[issue-1]: https://github.com/susapad/software-insider/issues/1
 [gh-rules]: https://docs.github.com/en/site-policy/github-terms/github-community-guidelines#maintaining-a-strong-community
 
 ---
@@ -36,9 +56,9 @@ and make sure that you know about
 
 ## Licenses
 
-### SusaPad Software
+### SusaPad Software Insider
 
-*SusaPad Software* is under *GPL-3.0*, and it follows the following
+*SusaPad Software Insider* is under *GPL-3.0*, and it follows the following
 four degrees of freedom:
 
 - Freedom to run the program for any purpose.
@@ -99,15 +119,15 @@ For more details about their license, [read Qt's License][qt-license].
 
 ### Is it compatible with *Minipad*?
 
-Yes, it's compatible with the [current *minipad-firmware*'s
-version (*2023.410.1*)][minipad-release],
-which *SusaPad* will use.
+Yes, it's compatible with the [old *minipad-firmware*'s
+version (*commit `f62f827`*)][minipad-commit],
+used by *SusaPad Insider Edition*.
 
 
 ### Why my application is so slow?
 
 It's not the application itself,
-but the way it comunicate with arduino.
+but the way it comunicate via serial port.
 
 Unfortunately, the commands can only be sent with
 one second of interval between.
@@ -118,7 +138,7 @@ may take up to six seconds to complete.
 ### Is this software translated?
 
 No, it isn't. But we plan to translate it soon.
-For now *SusaPad Software* is just available to Portuguese,
+For now *SusaPad Software Insider* is just available to Portuguese,
 the native language of this project.
 
 
@@ -129,8 +149,13 @@ and has no relationship with other projects
 such as *Minipad Project*, *Nuitka*, *pySerial* or *QT Company*,
 but it has relationship with *SusaPad* itself.
 
+Also, worth mentioning that *SusaPad Software Insider* is a fork
+of *SusaPad Software* to work with the *Arduino* version of *SusaPad*,
+the *SusaPad Insider Edition*.
+So, it follows the same rules and licences given by *SusaPad Software*.
 
-[minipad-release]: https://github.com/minipadKB/minipad-firmware/releases/tag/2023.410.1
+
+[minipad-commit]: https://github.com/minipadKB/minipad-firmware-old/commit/f62f827ce73f8c3a55bdd9106de2d631eb93e775
 
 
 ## Contributors
@@ -141,7 +166,7 @@ but it has relationship with *SusaPad* itself.
 - Legacy application by: [Luiz Fernando][batatinho]
 
 It's good to mention Luiz Fernando who was responsible for creating
-the first functional version of *SusaPad* in *Kivy*.
+the first functional version of *SusaPad Software* in *Kivy*.
 
 
 [sousa]: https://github.com/sousaone1

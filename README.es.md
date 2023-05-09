@@ -6,14 +6,36 @@
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software* es el software usado para configurar *SusaPad*/[*MiniPad*][minipad].
+*SusaPad Software Insider* es el *software* usado para configurar 
+el *SusaPad Insider Edition*/[*MiniPad*][minipad].
 
-> **Note**: *SusaPad Software* hace referencia al proyecto en si mismo,
-> el no es el mismo que *SusaPad*, cuyo es un *keypad* (hardware).
+> **Note**: *SusaPad Software* 
+> hace referencia al [*SusaPad Software*][software],
+> el no es el mismo que *SusaPad*, cuyo es un *keypad* (*hardware*).
+
+> **Note**: Este no está disponible para 
+> todas las versiones del *SusaPad*/*MiniPad*
+>
+> Por favor, leeas la [Sección de Compatibilidad](#compatibilidad)
+> para más información.
 
 [minipad]: https://github.com/minipadKB
+[software]: https://github.com/susapad/software
 
 ## Guía del usuario
+
+### Compatibilidad
+
+Este no está disponible para todas las versiones del *SusaPad*
+desde que este software fue diseñado solo para el *Insider Edition*,
+cuyo usa *Arduino* en vez de *Raspberry*
+y el [antigo firmware del *MiniPad*][old-firmware] en vez del más reciente.
+
+Si tu *SusaPad*/*MiniPad* se encuentra el la más nueva versión del *firmware*,
+utilice el [*SusaPad Software*][software].
+
+[old-firmware]: https://github.com/minipadKB/minipad-firmware-old
+[software]: https://github.com/susapad/software
 
 ### Instalación
 
@@ -21,14 +43,14 @@
 
 ### Issues
 
-Puedes añadir propuestas: bugs, dudas, preguntas,
-solicitud de nuevas funcionalidades via Issues.
+Puedes añadir propuestas: *bugs*, dudas, preguntas,
+solicitud de nuevas funcionalidades via *Issues*.
 
-Por favor, leas cuidadosamiente [nosa Issue fijada][issue-1]
+Por favor, leas cuidadosamiente [nosa *Issue* fijada][issue-1]
 y asegúrase de saber sobre las
-[Pautas de la Comunidad de GitHub][gh-rules].
+[Pautas de la Comunidad de *GitHub*][gh-rules].
 
-[issue-1]: https://github.com/susapad/software/issues/1
+[issue-1]: https://github.com/susapad/software-insider/issues/1
 [gh-rules]: https://docs.github.com/es/site-policy/github-terms/github-community-guidelines#maintaining-a-strong-community
 
 ---
@@ -40,8 +62,8 @@ y asegúrase de saber sobre las
 
 ### SusaPad Software
 
-*SusaPad Software* está cubierto por la *GPL-3.0*, y sigue los siguientes
-cuatro grados de liberdad:
+*SusaPad Software Insider* está cubierto por la *GPL-3.0*, 
+y sigue los siguientes cuatro grados de liberdad:
 
 - Liberdad de ejecutar el programa para cualquier propósito.
 - Liberdad de estudiar como el programa funciona y adaptarlo a certas necesidades.
@@ -99,15 +121,16 @@ For more details about their license, [read Qt's License][qt-license].
 
 ## FAQ
 
-### ¿Es este software compatíble con el *Minipad*?
+### ¿Es este *software* compatíble con el *Minipad*?
 
-Si, esse software es compatible con la [versión actual del *minipad-firmware*
- (*2023.410.1*)][minipad-release], que el *SusaPad* irá usar.
+Si, esse *software* es compatible con la [versión legado del *minipad-firmware*
+(*commit `f62f827`*)][minipad-commit], 
+que es la utilizada por el *SusaPad Insider Edition*.
 
 ### ¿Por qué mi aplicación es tan lenta?
 
 Esto no es la aplicación en si,
-mas la forma con que comunicamonos con el arduino.
+mas la forma con que comunicamonos vía puerta serial.
 
 Infelismente, los comando somente pueden ser enviados con
 uno segundo de intervalo entre los mismos.
@@ -117,7 +140,7 @@ levar hasta seis segundos para completarse.
 ### Ese software es traducido?
 
 No, pero planejamos traducirlo próximamente.
-Por ahora, el *SusaPad Software* apresentase
+Por ahora, el *SusaPad Software Insider* apresentase
 disponible sólo en el portugués,
 la lenguaje nativa del proyeto.
 
@@ -129,8 +152,13 @@ y no tiene alguna relación con otros proyectos
 como *Minipad Project*, *Nuitka*, *pySerial* o *QT Company*,
 solamente con *SusaPad* en si.
 
+También, es bueno mencionar que *SusaPad Software Insider* es un fork
+del *SusaPad Software* para trabajar con la versión *Arduino* del *SusaPad*,
+el *SusaPad Insider Edition*.
+Así, este sigue las mismas normas y licencias dadas por el *SusaPad Software*.
 
-[minipad-release]: https://github.com/minipadKB/minipad-firmware/releases/tag/2023.410.1
+
+[minipad-commit]: https://github.com/minipadKB/minipad-firmware-old/commit/f62f827ce73f8c3a55bdd9106de2d631eb93e775
 
 
 ## Contributors
