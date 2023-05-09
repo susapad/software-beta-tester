@@ -6,12 +6,13 @@
 
 ![gpl-3.0](./susapad/media/gplv3-with-text-136x68.png)
 
-*SusaPad Software* is the software used to configure *SusaPad*/[*MiniPad*][minipad].
+*SusaPad Software Insider* is the software used to configure 
+o *SusaPad Insider Edition*/[*MiniPad*][minipad].
 
 > **Note**: *SusaPad Software* refere-se ao [SusaPad Software][software],
 > mas não é o mesmo que o *SusaPad*, o qual é um *keypad* (hardware).
 
-> **Note**: Este não está disponível para 
+> **Note**: Este software não está disponível para 
 > todas as versões do *SusaPad*/*Minipad*.
 >
 > Por favor, leia a [Secção de Compatibilidade](#compatibilidade) 
@@ -29,7 +30,11 @@ desde que este software foi desenhado para o *Insider Edition* apenas,
 que usa *Arduino* ao invés do *Raspberry*
 e o [antigo firmware do MiniPad][old-firmware] ao invés do mais recente.
 
+Se o seu *SusaPad*/*MiniPad* se encontra na versão mais nova do firmware,
+utilize o [*SusaPad Software*][software].
+
 [old-firmware]: https://github.com/minipadKB/minipad-firmware-old
+[software]: https://github.com/susapad/software
 
 ### Instalação
 
