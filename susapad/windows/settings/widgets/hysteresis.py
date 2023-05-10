@@ -6,20 +6,20 @@ from PySide6.QtCore import Qt
 from susapad import base_widgets as base
 from susapad.controller import exception
 
-class ActuationPointGroup(base.BaseSliderGroup):
+class HysteresisGroup(base.BaseSliderGroup):
 
     def __init__(self, window, susapad):
         super().__init__(window, susapad, vertical = True)
-        self.set_range((10, 390))
-        self.set_template(Template("Ponto de atuação: (${value})"))
+        self.set_range((8, 380))
+        self.set_template(Template("Hysteresis: (${value})"))
         self._update_label()
 
     def update_susapad(self, value: int) -> bool:
-        return self.susapad.set_actuation_point(self.reverse(value))
+        return self.susapad.set_hysteresis(self.reverse(value))
 
     @staticmethod
     def reverse(value: int) -> int:
-        if 190 == value:
-            return 190
+        if 194 == value:
+            return 194
         else:
             return 400 - value
