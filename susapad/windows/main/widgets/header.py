@@ -22,7 +22,7 @@ class SusaPadLogo(QtWidgets.QLabel):
 class SusaPadTitle(QtWidgets.QLabel):
 
     def __init__(self):
-        super().__init__("SusaPad")
+        super().__init__("SusaPad Insider")
         self.setStyleSheet(
             """
                 color: white;
