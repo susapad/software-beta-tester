@@ -44,52 +44,26 @@ class SusaPad:
 
 
     # Settings functions
-    def set_trigger(self, on: True) -> bool:
-        """Set if SusaPad is **on** or **off**"""
-        n = 1 if on else 0
-        return self.__configure_susapad("hid", n)
-
     def set_rapid_trigger(self, on: bool = True) -> bool:
         """Set if SusaPad's Rapid Trigger is **on** or **off**"""
         n = 1 if on else 0
         return self.__configure_susapad("rt", n)
 
-    def set_continuous_rapid_trigger(self, on: bool = True) -> bool:
-        """Set if SusaPad's Continuous Rapid Trigger is **on** or **off**"""
-        n = 1 if on else 0
-        return self.__configure_susapad("crt", n)
-
-    def set_release_sensibility(self, value: int) -> bool:
+    def set_sensibility(self, value: int) -> bool:
         """"Set SusaPad's sensibility"""
-        return self.__configure_susapad("rtus", value)
+        return self.__configure_susapad("rts", value)
 
-    def set_press_sensibility(self, value: int) -> bool:
-        """"Set SusaPad's sensibility"""
-        return self.__configure_susapad("rtds", value)
-
-    def set_actuation_point(self, value: int) -> bool:
+    def set_hysteresis(self, value: int) -> bool:
         """Set SusaPad's Actuation ponit"""
-
-        # NOTE: We need to reset `lh` and `uh` to avoid undesired side-effects.
-        #   Note that `uh` must always be smaller than `lh`.
-        #   So bugs may occur if we don't reset this value.
-        r2 = self.__configure_susapad("lh", 0)
-        r2 = self.__configure_susapad("uh", 390)
-
         r1 = self.__configure_susapad("uh", value)
         r2 = self.__configure_susapad("lh", value - 10)
-
         return r1 and r2
 
-
-
-    # Internal functions
-
-    def __configure_susapad_key(self, key: int, command: str, value: int) -> bool:
+    def save(self) -> bool:
         try:
             time.sleep(1)
-            print(f"key{key}.{command} {value}")
-            self.serial.write(f"key{key}.{command} {value}".encode())
+            print(f"save")
+            self.serial.write(f"save".encode())
             self.serial.flush()
             return True
         except:
@@ -98,7 +72,18 @@ class SusaPad:
             else:
                 return False
 
+
+    # Internal functions
+
     def __configure_susapad(self, command: str, value: int) -> bool:
-        k1 = self.__configure_susapad_key(1, command, value)
-        k2 = self.__configure_susapad_key(3, command, value)
-        return k1 and k2
+        try:
+            time.sleep(1)
+            print(f"{command} {value}")
+            self.serial.write(f"{command} {value}".encode())
+            self.serial.flush()
+            return True
+        except:
+            if self.debug:
+                return True
+            else:
+                return False

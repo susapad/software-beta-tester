@@ -7,7 +7,7 @@ from susapad import base_widgets as base
 from . import buttons, header
 
 
-README_LINK = "https://github.com/RickBarretto/SusaPadSoftware#readme"
+README_LINK = "https://github.com/susapad/software-insider#readme"
 
 
 class HeaderGroup(QtWidgets.QWidget):

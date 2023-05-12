@@ -1,4 +1,4 @@
-"""SusaPad's main file"""
+"""The main file"""
 
 import os, sys, pathlib
 
